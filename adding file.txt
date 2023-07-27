@@ -1,0 +1,18 @@
+-q query
+-a all
+-U upgrade
+        
+ download package via wget command: 
+   wget https://archives.jenkins-ci.org/redhat-stable/jenkins-2.346.1-1.1.noarch.rpm
+ 
+  rpm -ivh jenkins-2.346.1-1.1.noarch.rpm   // install package
+  rpm -qa | grep -i jenkins                 // list/query all package
+  rpm -qi jenkins-2.346.1-1.1.noarch        // information about packages
+  rpm -ql jenkins-2.346.1-1.1.noarch        // all files and directrories path
+  rpm -Uvh jenkins-2.346.3-1.1.noarch.rpm   // upgrade the package
+  rpm -e jenkins-2.346.3-1.1.noarch
+  
+[root@ip-172-31-26-153 ~]# rpm -ivh jenkins-2.346.1-1.1.noarch.rpm
+warning: jenkins-2.346.1-1.1.noarch.rpm: Header V4 RSA/SHA512 Signature, key ID 45f2c3d5: NOKEY
+Verifying...                          ################################# [100%]
+Preparing...                          ################################# [100%]
